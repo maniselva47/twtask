@@ -63,6 +63,7 @@ class AuthorController extends Controller {
 
     // login user
     public function login(Request $request){
+
         $validators=Validator::make($request->all(),[
             'email'=>'required|email',
             'password'=>'required'
